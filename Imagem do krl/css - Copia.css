@@ -1,0 +1,142 @@
+.fundo {
+    background-color: rgb(70, 70, 70);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.retangulo_branco_cima {
+    height: 15vh;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.retangulo_branco_itens { /* Ver com a prof sobre a posição */
+    position: fixed ; 
+    background-color: white;
+    text-align: center;
+    font-size: larger;
+    height: 50%;
+    min-height: 500px;
+    max-height: max-content;
+    width: 900px;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tela_login {
+    background-color: white;
+    text-align: center;
+    font-size: 30px;
+    height: 600px;
+    width: 500px;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: end;
+}
+
+.centro {
+    
+    }
+
+.logo_IF { /*Mal funcionamento da imagem*/
+    position: relative;
+    height: 70px;
+    width: 50px;
+    
+}
+
+.div_fantasma {
+    height: 70px;
+    width: 50px;
+    
+}
+
+.fonte_titulo {
+    font-size: 50px;
+    font-weight: bold;
+    width: 100%;
+    height: 35%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 63px;
+}
+
+.botao_verde {
+    background-color: rgb(86, 170, 86);
+    font-weight: bold;
+    color: white;
+    height: 40px;
+    width: 85px;
+    border-radius: 8px;
+    border: none;
+}
+
+.botao_vermelho a { /*uma melhor forma de alinhamento (opcional pq esse funciona "bem")*/
+    background-color: red;
+    color: white;
+    height: 30px;
+    width: 60px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    font-size: medium;
+    top: 6vh;
+    left: 170vh;
+    position: absolute;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.botao_cancelar {
+    font-size: medium;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+}
+
+.botao_cinza a {
+    font-size: medium;
+    color: black;
+    background-color: dimgray;
+}
+
+.botao_esqueci_senha {
+    font-size: medium;
+    color: black;
+    text-decoration: underline;
+    border: none;
+}
+
+.tabela {
+    height: 25px;
+    width: 420px;
+    border: 3px solid black;
+    border-radius: 6px;
+}
+
+.titulo_nexum a {
+    position: absolute;
+    top: 5vh;
+    left: 9vh;
+    color: black;
+    text-decoration: none;
+}
+
+.titulo_nexum:visited {
+    color: black;
+}
+
+.titulo_gerenciar { /*uma forma melhor de colocar este titulo (essa forma q pensei émeiom pode mas da certo)*/
+    position: absolute;
+    
+}
+
