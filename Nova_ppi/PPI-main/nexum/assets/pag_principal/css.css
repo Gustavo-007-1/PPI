@@ -1,0 +1,183 @@
+.fundo {
+    background-color: rgb(70, 70, 70);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.retangulo_branco_cima {
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+.retangulo_branco_itens { /* Arumar alinhamentos */
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    height: 500px;
+    width: 900px;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 200px;
+    line-height: 20px;
+    
+}
+
+.tela_login {
+    background-color: white;
+    text-align: center;
+    font-size: 30px;
+    height: 600px;
+    width: 500px;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: end;
+    margin-top: 70px;
+}
+
+.titulo_nexum a { /* Método ruim para alinhamento, trocar mais tarde */
+    color: black;
+    text-decoration: none;
+    background-color: aqua;
+    position: fixed;
+    top: 22px;
+    left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo_nexum:visited {
+    color: black;
+}
+
+.logo_IF_l { 
+    position: relative;
+    height: 70px;
+    width: 50px;
+    
+}
+
+.logo_IF { /* Método ruim para alinhamento, trocar mais tarde */
+    height: 70px;
+    width: 50px;
+    background-color: blueviolet;
+    position: relative;
+    top: 5px;
+    left: 15px;
+}
+
+.div_fantasma {
+    height: 70px;
+    width: 50px;
+    
+}
+
+.fonte_titulo {
+    font-size: 50px;
+    font-weight: bold;
+    width: 100%;
+    height: 35%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 63px;
+}
+
+.botao_verde {
+    background-color: rgb(86, 170, 86);
+    font-weight: bold;
+    color: white;
+    height: 40px;
+    width: 85px;
+    border-radius: 8px;
+    border: none;
+}
+
+.botao_sair a { /*uma melhor forma de alinhamento (opcional pq esse funciona "bem")*/
+    background-color: red;
+    color: white;
+    height: 30px;
+    width: 60px;
+    border-radius: 5px;
+    border: none;
+    font-size: medium;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    top: 26px;
+    right: 30px;
+}
+
+.botao_minha_conta {
+    background-color: limegreen;
+    color: white;
+    height: 30px;
+    width: 90px;
+    border-radius: 5px;
+    border: none;
+    font-size: medium;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    top: 26px;
+    right: 110px;
+}
+
+.botao_cancelar {
+    font-size: medium;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+}
+
+.botao_cinza a {
+    background-color: rgb(70, 70, 70);
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.botao_esqueci_senha {
+    font-size: medium;
+    color: black;
+    text-decoration: underline;
+    border: none;
+}
+
+.tabela {
+    height: 25px;
+    width: 420px;
+    border: 3px solid black;
+    border-radius: 6px;
+}
+
+
+
+.titulo_gerenciar { /*uma forma melhor de colocar este titulo (essa forma q pensei é meio pode mas da certo)*/
+    margin-top: 115px;
+    height: 50px;
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
