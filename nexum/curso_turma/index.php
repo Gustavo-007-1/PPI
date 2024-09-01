@@ -11,7 +11,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos e Turmas - Nexum</title>
+    <title>Nexum</title>
 </head>
 <body>
     <div>
@@ -24,23 +24,47 @@
             include "../config.php";
             switch (@$_REQUEST["page"]){
                 case 'cadastrar_curso':
-                    include("./cadastrar_curso.php");
+                    include("../gerenciar_curso/cadastrar.php");
                     break;
                 
                 case 'editar_curso':
-                    include("./editar_curso.php");
+                    include("../gerenciar_curso/editar.php");
                     break;
 
                 case 'salvar_curso':
-                    include("./salvar_curso.php");
+                    include("../gerenciar_curso/salvar.php");
                     break;
                 
                 case 'cadastrar_turma':
-                    include("./cadastrar_turma.php");
+                    include("../gerenciar_turma/cadastrar.php");
+                    break;
+                
+                case 'editar_turma':
+                    include("../gerenciar_turma/editar.php");
                     break;
                 
                 case 'salvar_turma':
-                    include("./salvar_turma.php");
+                    include("../gerenciar_turma/salvar.php");
+                    break;
+                
+                case 'turma':
+                    include("../gerenciar_turma/listar.php");
+                    break;
+                
+                case 'cadastrar_aluno':
+                    include("../gerenciar_aluno/cadastrar.php");
+                    break;
+                
+                case 'editar_aluno':
+                    include("../gerenciar_aluno/editar.php");
+                    break;
+                
+                case 'salvar_aluno':
+                    include("../gerenciar_aluno/salvar.php");
+                    break;
+                
+                case 'aluno':
+                    include("../gerenciar_aluno/aluno.php");
                     break;
 
                 case 'logout':
