@@ -43,6 +43,7 @@
             break;
         
         case 'simplificada':
+            echo "<br><img src=\"../gerenciar_aluno/foto_upload/". $row_aluno->foto."\"/>";
             echo $row_aluno->nome . " ";
             echo $row_aluno->email_institucional . "  ";
             if(($row_aluno->moradia != "Não") || ($row_aluno->moradia != "não")){

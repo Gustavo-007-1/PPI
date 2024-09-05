@@ -5,9 +5,10 @@
 
     $res_turma = $conexao->query($sql_turma);
     $qtd_turma = $res_turma->num_rows;
+
 ?>
 
-<form action="?page=salvar_aluno&acao=cadastrar&idturma=<?php echo $_REQUEST["idturma"]; ?>" method="POST">
+<form enctype="multipart/form-data" action="?page=salvar_aluno&acao=cadastrar&idturma=<?php echo $_REQUEST["idturma"]; ?>" method="POST">
     <div>
         <label>Nome</label>
         <input type="text" name="nome" required>
@@ -56,6 +57,10 @@
                     }  
             ?>
         </select>
+    </div>
+    <div>
+        <label for="foto">Foto do Aluno</label>
+        <input type="file" name="foto_aluno">
     </div>
     <div>
         <button type="submit">Cadastrar</button>

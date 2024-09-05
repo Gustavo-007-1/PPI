@@ -26,7 +26,7 @@
         $row_ano = $res_ano->fetch_object();
 
         // consulta a tabela aluno
-        $sql_aluno = "SELECT id_aluno, nome
+        $sql_aluno = "SELECT id_aluno, nome, foto
                 FROM aluno
                 WHERE aluno.id_turma =" . $_REQUEST["idturma"] . "
                 ORDER BY nome ASC";
@@ -56,6 +56,7 @@
         // exibe os alunos da respectiva turma
         if($qtd_aluno>0){
                 while($row_aluno = $res_aluno->fetch_object()){
+                        echo "<br><img src=\"../gerenciar_aluno/foto_upload/". $row_aluno->foto."\"/>";
                         echo "<br><button onclick=\"location.href='?page=aluno&idaluno=" . $row_aluno->id_aluno . "&idturma=". $row_turma->id_turma ."&info=simplificada';\">".$row_aluno->nome."</button>";
                         if($_SESSION["categoria"]==1 || $_SESSION["categoria"]==2){
                                 echo "<button onclick=\"location.href='?page=editar_aluno&idaluno=" . $row_aluno->id_aluno . "&idturma=". $row_turma->id_turma ."&r=turma';\">Editar</button>";

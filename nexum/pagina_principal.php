@@ -5,19 +5,17 @@
         exit();
     }
 
-    if($_SESSION["categoria"]==1){
-        switch (@$_REQUEST["page"]){
-            case 'usuario':
-                header('Location: ./gerenciar_usuario/index.php');
-                exit();
-                break;
-
-            default:
-                break;
-        }
-
-    }
     switch (@$_REQUEST["page"]){
+        case 'usuario':
+            header('Location: ./gerenciar_usuario/index.php');
+            exit();
+            break;
+        
+        case 'gerenciar_disciplina':
+            header('Location: ./gerenciar_disciplina/listar.php');
+            exit();
+            break;
+
         case 'principal':
             header('Location: ./pagina_principal.php');
             exit();
@@ -57,6 +55,9 @@
         <?php 
             if($_SESSION["categoria"]==1){
                 echo "<a href=\"?page=usuario\">Gerenciar Usuarios</a>";
+            }
+            if(($_SESSION["categoria"]==1) || ($_SESSION["categoria"] == 2)){
+                echo "<a href=\"?page=gerenciar_disciplina\">Gerenciar Disciplinas</a>";
             }
             echo "<br>";
             echo "<a href=\"?page=curso_turma\">Cursos e Turmas</a>"

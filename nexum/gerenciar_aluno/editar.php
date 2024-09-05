@@ -18,7 +18,21 @@
 
 <?php 
         if($qtd_aluno>0){
-            echo "<form action=\"?page=salvar_aluno&acao=editar&idturma=". $_REQUEST["idturma"] ."&idaluno=". $row_aluno->id_aluno."&r=".$_REQUEST["r"]."\" method=\"POST\">";
+            echo "<form enctype=\"multipart/form-data\" action=\"?page=salvar_aluno&acao=editar&idturma=". $_REQUEST["idturma"] ."&idaluno=". $row_aluno->id_aluno."&r=".$_REQUEST["r"]."\" method=\"POST\">";
+
+                echo "<label>Foto do Aluno</label><br>";
+                if($row_aluno->foto != NULL){
+                    echo "<br>Foto atual";
+                    echo "<br><img src=\"../gerenciar_aluno/foto_upload/". $row_aluno->foto."\"/><br>";
+                    echo "<input type=\"hidden\" value=\"". $row_aluno->foto."\" name=\"foto_antiga_aluno\">";
+
+                    echo "Nova foto <br>";
+                    echo "<input type=\"file\" name=\"foto_nova_aluno\"><br><br>";
+                }
+                else{
+                    echo "<input type=\"file\" name=\"foto_aluno\"><br><br>";
+                }
+
                 echo "<label>Nome</label><br>";
                 echo "<input type=\"text\" name=\"nome\" value=\"" . $row_aluno->nome . "\"><br><br>";
 
