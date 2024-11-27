@@ -1,0 +1,68 @@
+body {
+    background-color: dimgray;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: black;
+    transform: translateY(190px);
+}
+
+/* Contêiner principal do formulário */
+.quadrado_branco_alterar_senha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 15px;
+    width: 40%;
+    padding: 30px;
+    margin: 10% auto; /* Centraliza vertical e horizontalmente */
+}
+
+/* Estilo para os campos de entrada */
+.quadrado_branco_alterar_senha input {
+    width: 600px; /* Ajusta a largura dos campos */
+    height: 40px; /* Altura fixa */
+    padding: 10px;
+    margin-top: 10px;
+    border: 5px solid black;
+    border-radius: 15px;
+    font-size: 1em;
+    text-align: center;
+}
+
+/* Estilo dos rótulos (label) */
+.quadrado_branco_alterar_senha label {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 5px;
+    align-self: flex-start; /* Alinha o label à esquerda */
+    padding-left: 5%;
+    text-align: left;
+}
+
+/* Botão de envio */
+.quadrado_branco_alterar_senha button {
+    background-color: #0d730d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+    align-self: flex-end; 
+    transform: translateX(590px);
+    height: 50px;
+    width: 100px;
+}
+
+.quadrado_branco_alterar_senha button:hover {
+    background-color: limegreen;
+}
