@@ -1,0 +1,126 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: dimgray;
+  }
+  
+  .container {
+    background-color: #fff; 
+    color: #000;
+    padding: 30px;
+    border-radius: 10px;
+    width: 1000px; 
+    height: 500px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px; 
+    left: 20px;
+  }
+  
+  .logo {
+    width: 30px;
+    height: 30px;
+    background-color: #4CAF50;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .title {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  h2 {
+    text-align: center;
+    margin: 60px 0 20px; 
+    transform: translateY(-300%);
+    font-size: 50px;
+  }
+  
+  form {
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    transform: translateY(-200%);
+    font-size: 25px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 25px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    transform: translateY(-77%);
+  }
+  
+  input::placeholder {
+    color: #aaa;
+    
+  }
+  
+  p {
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .cancel {
+    background-color: #333;
+    color: #fff;
+    font-size: 25px;
+    transform: translateX(-100%);
+    transform: translateY(30%);
+    margin-left: 660px;
+  }
+  .cancel:hover {
+    background-color: #555;
+  }
+  
+  .recover {
+    background-color: #0d730d;
+    color: #fff;
+    font-size: 25px;
+    transform: translateY(30%);
+  }
+  
+  .recover:hover {
+    background-color: limegreen;
+  }
+  
+
+  
